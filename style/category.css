@@ -1,0 +1,49 @@
+.wrapper-card-catogory{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.blour{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-Category{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#imgBasicas{
+    background-image: url('../public/img/basics.jpg');
+    
+}
+
+#imgFormal{
+    background-image: url('../public/img/formal.jpg');
+    
+}
+
+#imgFreeStyle{
+    background-image: url('../public/img/freestyle.jpg');
+    
+}
+
+.blour h2{
+    font-family: 'Montserrat',sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    top: 20%;
+    
+}
