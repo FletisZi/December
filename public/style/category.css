@@ -1,0 +1,88 @@
+.category{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.wrapper-card-catogory{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: linear 10s ;
+}
+
+.blour{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-Category{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: linear 10s ;
+}
+
+.img-Category:hover{
+   animation: animationimgs 1s ;
+   background-size: 110%;
+   cursor: pointer;
+}
+
+#imgFreeStyle:hover{
+    animation: animationimgs2 1s ;
+    background-size: 160%;
+    cursor: pointer;
+}
+
+@keyframes animationimgs {
+    0%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 110%;
+    }
+
+}
+
+@keyframes animationimgs2 {
+    0%{
+        background-size: 150%;
+    }
+    100%{
+        background-size: 160%;
+    }
+
+}
+
+
+
+#imgBasicas{
+    background-image: url('../img/basics.jpg');
+    
+}
+
+#imgFormal{
+    background-image: url('../img/formal.jpg');
+    
+}
+
+#imgFreeStyle{
+    background-image: url('../img/freestyle.jpg');
+    
+}
+
+.blour h2{
+    font-family: 'Montserrat',sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    top: 20%;
+    
+}

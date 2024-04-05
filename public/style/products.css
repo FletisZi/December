@@ -1,0 +1,40 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    justify-content: center;
+    gap: 1.875rem ;
+}
+
+.wrapper-card-product{
+    width: 150px;
+    height: 250px;
+}
+
+.imgs-products{
+    width: 100%;
+    height: 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.wrapper-info{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+#prod1{
+    background-image: url('../img/blusa_tommy.jpg');
+}
