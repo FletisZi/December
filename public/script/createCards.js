@@ -2,7 +2,8 @@ import getImgUsers from "./apiget.js";
 
 const sectionProducts = document.querySelector('.products')
  
-const url = "http://localhost:3001/produtos"
+// const url = "http://localhost:3001/produtos"
+const url = "http://77.37.43.91:3001/produtos"
 
 const produtos = await getImgUsers(url)
 
