@@ -1,0 +1,9 @@
+.title{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title.category{
+    text-shadow: 1px 4px 8px black;
+}
