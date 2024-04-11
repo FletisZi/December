@@ -11,7 +11,7 @@ const connection = require('./models/dbConection.js')
 //     }
 // });
 
-// const values = `"BLUSA DA TOMMY","http://localhost:3001/public/productsIMG/blusa_tommy_basic.JPG","basics"`
+// const values = `"BLUSA DA versace","http://localhost:3001/public/productsIMG/blusa_tommy_basic.JPG","formal"`
 
 // connection.query(`INSERT INTO products (description, imgURL, type) VALUES (${values})`, function(err, rows, fields){
 //     if(!err){
@@ -33,6 +33,32 @@ server.get('/produtos',(req,res)=>{
             res.send(rows)
         }
     });
+})
+
+server.get('/types',(req,res)=>{
+    
+    connection.query(`SELECT * FROM products WHERE type = "${req.query.type}"`, function(err, rows, fields){
+        if(!err){
+            res.send(rows)
+        }
+    });
+})
+
+server.get('/category',(req,res)=>{
+    switch (req.query.nome) {
+        case 'basics':
+            res.sendFile(__dirname+'/pages.html');
+            break;
+        case 'formal':
+            res.sendFile(__dirname+'/pages.html');
+            break;
+        case 'freestyle':
+            res.sendFile(__dirname+'/pages.html');
+            break;
+        default:
+            res.send('404 not found');
+    }
+    
 })
 
 
