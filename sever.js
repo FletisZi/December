@@ -13,6 +13,8 @@ const connection = require('./models/dbConection.js')
 
 // const values = `"BLUSA DA versace","http://localhost:3001/public/productsIMG/blusa_tommy_basic.JPG","formal"`
 
+//INSERT INTO products (description, imgURL, type) VALUES ('Camiseta básica da lacoste na cor branca P,M,G,GG','http://77.37.43.91:3001/public/productsIMG/basic_lacoste.jpg','basics');
+
 // connection.query(`INSERT INTO products (description, imgURL, type) VALUES (${values})`, function(err, rows, fields){
 //     if(!err){
 //         console.log('CADASTRADO COM SUCESSO')

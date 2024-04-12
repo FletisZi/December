@@ -10,7 +10,9 @@ async function createCards(url){
     
     const produtos = await getImgUsers(url)
     
-    
+    if(produtos.length == 0){
+        console.log('nao tem produtos');
+    }
     
     produtos.map((produto)=>{
         const wrapperCardProduct = document.createElement('div');

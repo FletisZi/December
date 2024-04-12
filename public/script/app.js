@@ -36,6 +36,7 @@ const splitQuery = queryUrl.split('=')
 
 if(splitQuery[1] != undefined){
     // await createCards(`http://localhost:3001/types?type=${splitQuery[1]}`);
+
     await createCards(`http://77.37.43.91:3001/types?type=${splitQuery[1]}`);
     
 
