@@ -9,3 +9,11 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (min-width: 600px) {
+    .banner{
+        background-image: url('../img/december_banner2.png');
+        background-position: top;
+        height: 70vh;
+    }
+}
