@@ -37,7 +37,11 @@ server.get('/produto',(req,res)=>{
         if(!err){
             itemArray = rows[0]
             res.send(produto(itemArray.imgURL,itemArray.description, itemArray.id));
-        }
+            console.log(req.query.id)
+        }else(
+            console.log('deu erro'+err);
+        )
+
     });
 
 
