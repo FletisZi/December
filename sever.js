@@ -36,11 +36,11 @@ server.get('/produto',(req,res)=>{
     connection.query(`SELECT * FROM products WHERE id = "${req.query.id}"`, function(err, rows, fields){
         if(!err){
             itemArray = rows[0]
-            res.send(produto(itemArray.imgURL,itemArray.description, itemArray.id));
             console.log(req.query.id)
-        }else(
-            console.log('deu erro'+err);
-        )
+            console.log(itemArray);
+            res.send(produto(itemArray.imgURL,itemArray.description, itemArray.id));
+            
+        }
 
     });
 
