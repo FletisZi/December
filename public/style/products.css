@@ -41,3 +41,27 @@
 #prod1{
     background-image: url('../img/blusa_tommy.jpg');
 }
+
+
+@media (width > 950px){
+
+    .products{
+        grid-template-columns: repeat(auto-fit, 350px);
+
+    }
+    
+    .wrapper-card-product{
+       width: 350px;
+        height: 450px;
+    } 
+    .imgs-products{     
+        height: 360px;
+        
+    }
+    .description{
+
+        font-size: 16px;
+        margin-top: 15px;
+        
+    }
+}
