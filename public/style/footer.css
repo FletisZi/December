@@ -1,0 +1,51 @@
+.footer{
+    padding: 2rem 0;
+    margin-top: 2rem;
+    background-color: #000;
+    width: 100%;
+    min-height: 15vh;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+}
+.footer h2{
+    font-size: 20px;
+}
+.footer article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+li{
+    padding: 5px 0;
+    list-style-type: none;
+}
+.links-footer{
+    text-decoration: none;
+    color: #FFF;
+    
+}
+.imgs-pagamento{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.pagments{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 900px){
+
+    .footer{
+        flex-direction: column;
+        gap: 25px;
+    }
+   
+}

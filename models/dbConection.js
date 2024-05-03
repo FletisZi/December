@@ -1,20 +1,13 @@
 const mysql = require('mysql');
-
-// const connection = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'fletiszi',
-//     password: '123456',
-//     database: 'december'
-// })
-
-// admin conect
+require('dotenv').config()
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'admin',
-    password: 'Fonta@04',
-    database: 'december'
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
 })
+
 
 connection.connect(function(err) {
     if (err) {

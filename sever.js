@@ -1,6 +1,7 @@
 const express = require('express');
 const server = express();
 const connection = require('./models/dbConection.js')
+const produto = require('./models/product.js')
 
 
 
@@ -27,6 +28,20 @@ server.use('/public', express.static(__dirname + '/public'));
 
 server.get('/',(req, res)=>{
     res.sendFile(__dirname+'/index.html')
+})
+
+server.get('/produto',(req,res)=>{
+    req.query.id
+
+    connection.query(`SELECT * FROM products WHERE id = "${req.query.id}"`, function(err, rows, fields){
+        if(!err){
+            itemArray = rows[0]
+            res.send(produto(itemArray.imgURL,itemArray.description, itemArray.id));
+        }
+    });
+
+
+    // 
 })
 
 server.get('/produtos',(req,res)=>{

@@ -26,6 +26,8 @@ async function createCards(url){
         button.classList.add('button','comprar');
         button.textContent = `COMPRAR`;
         button.addEventListener('click', ()=>{
+
+            window.location.href = `http://localhost:3001/produto?id=${produto.id}`
             console.log(produto.id)
         })
     

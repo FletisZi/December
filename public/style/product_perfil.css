@@ -1,0 +1,56 @@
+.container-product-perfil{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imgProduct{
+    width: 50%;
+    height: 100%;
+    background-image: url('../productsIMG/blusa_tommy_basic.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper-descriptions{
+    width: 50%;
+    height: 100%;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8em;
+    
+}
+
+.description-perfil{
+    font-size: 20px;
+    border-bottom: 1px solid #292828;
+    margin-top: 8rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.button.comprar.product{
+    font-size: 22px;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 400px){
+    .container-product-perfil{
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: inherit;
+    }
+    .imgProduct{
+        height: 80vh;
+        width: 100%;
+    }
+    .wrapper-descriptions{
+        width: 100%;
+    }
+}

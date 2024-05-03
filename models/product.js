@@ -1,3 +1,7 @@
+let product = function(urlIMG,description,id){
+    return(
+        `
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,6 +20,7 @@
     <link rel="stylesheet" href="./public/style/products.css">
     <link rel="stylesheet" href="./public/style/main.css">
     <link rel="stylesheet" href="./public/style/buttons.css">
+    <link rel="stylesheet" href="./public/style/product_perfil.css">
     <link rel="stylesheet" href="./public/style/footer.css">
 
     <title>Herald Gentlemen</title>
@@ -27,12 +32,19 @@
     </header>
 
     <main>
-        <section class="products">          
-            
-            
-        </section>
+    <section class="product">          
+        <div class="container-product-perfil">
+            <div class="imgProduct" alt="img camiseta" style="background-image: url('${urlIMG}');"></div>
+            <div class="wrapper-descriptions">
+                <div class="description-perfil">
+                    ${description}
+                </div>
+                <a href="https://web.whatsapp.com/send?phone=5517992741290&text=Ol%C3%A1!%20Fiquei%20interessado%20em....${id}" class="button comprar product" data-id="${id}">COMPRAR</a>
+            </div>
 
+        </div>
         
+    </section>   
 
     </main>
 
@@ -66,7 +78,18 @@
         </article>
     </footer>
 </body>
-<script src="./public/script/app.js" type="module">
 
+<script>
+    document.querySelector('.logo').addEventListener('click', ()=>{
+        window.location.href = "http://77.37.43.91:3001/"
+    })
 </script>
 </html>
+
+
+`
+    )
+}
+
+
+module.exports = product
