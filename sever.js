@@ -36,8 +36,6 @@ server.get('/produto',(req,res)=>{
     connection.query(`SELECT * FROM products WHERE id = "${req.query.id}"`, function(err, rows, fields){
         if(!err){
             itemArray = rows[0]
-            console.log(req.query.id)
-            console.log(itemArray[0]);
             res.send(produto(itemArray.imgURL,itemArray.description, itemArray.id));
             
         }
