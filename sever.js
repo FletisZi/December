@@ -37,7 +37,7 @@ server.get('/produto',(req,res)=>{
         if(!err){
             itemArray = rows
             console.log(req.query.id)
-            console.log(itemArray);
+            console.log(itemArray[0]);
             res.send(produto(itemArray.imgURL,itemArray.description, itemArray.id));
             
         }
